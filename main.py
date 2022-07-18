@@ -1,15 +1,10 @@
 from data import *
 
-print("""
-Kim foydalanyapti
-1.Do'kon egasi
-2.Xaridor""")
+foydalanuvchi = input("Ism: ")
 
-foydalanuvchi = int(input("Raqamni kiriting: "))
-
-if foydalanuvchi == DOKON_EGASI:
+if foydalanuvchi in DOKON_EGALARI:
     print("Bu xizmat xozircha mavjud emas")
-elif foydalanuvchi == 2:
+else:
     boshi = 0
     while True:
         for i in maxsulotlar_malumoti:
